@@ -1,5 +1,7 @@
 # Handwritten_Character_Recognition
 
+## Introduction
+
 Handwritten text recognition(HTR) often referred to as "Handwriting Recognition" (HWR), refers to a computer's ability to recognise and process understandable handwritten data from sources such as paper documents, photos, touch-screens, and other devices. The formatting, accurate character segmentation, and word-finding processes are all handled by a handwriting recognition system.
 
 ![image](https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/d9c83837-dead-4c19-b10f-2327c08f729c)
