@@ -28,13 +28,13 @@ Once the images are processed, the text recognition system can apply machine lea
 
 Overall, image processing is a vital step in the handwritten text recognition pipeline as it enables the system to transform raw images of handwritten text into a standardized and optimized format for subsequent analysis and recognition. By enhancing the quality and consistency of the images, image processing contributes to improving the accuracy and performance of the handwritten text recognition system.
 
-![image](https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/8ae06979-8270-4118-9daa-a30e54e2b18e)
+<img src = "https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/8ae06979-8270-4118-9daa-a30e54e2b18e" width = "600" align = "middle">
 
 
 ## Dataset
 The **Kaggle dataset** provides us with the **IAM (IAM Handwriting Database)** is a widely used and publicly available dataset that has significantly contributed to the development and evaluation of handwritten text recognition systems. The IAM Database consists of a large collection of forms, letters, and documents written by different individuals. It includes over 1,000 pages of handwritten text, containing approximately 115,000 isolated and labelled words.
 
-![image](https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/3d0c8bc1-cfbd-4bc7-9297-d1f19251d17c)
+<img src = "https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/3d0c8bc1-cfbd-4bc7-9297-d1f19251d17c" width = "600" align = "middle">
 
 
 The words have been extracted from pages of scanned text using an automatic segmentation scheme. All form, line and word images are provided as PNG files and the corresponding form label files, including segmentation information and variety of estimated parameters from the preprocessing steps described in are included in the image files.
