@@ -2,6 +2,9 @@
 
 Handwritten text recognition(HTR) often referred to as "Handwriting Recognition" (HWR), refers to a computer's ability to recognise and process understandable handwritten data from sources such as paper documents, photos, touch-screens, and other devices. The formatting, accurate character segmentation, and word-finding processes are all handled by a handwriting recognition system.
 
+![image](https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/d9c83837-dead-4c19-b10f-2327c08f729c)
+
+
 ## Important stages in a HTR model
 
 ### Image processing 
@@ -23,13 +26,28 @@ Once the images are processed, the text recognition system can apply machine lea
 
 Overall, image processing is a vital step in the handwritten text recognition pipeline as it enables the system to transform raw images of handwritten text into a standardized and optimized format for subsequent analysis and recognition. By enhancing the quality and consistency of the images, image processing contributes to improving the accuracy and performance of the handwritten text recognition system.
 
+![image](https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/8ae06979-8270-4118-9daa-a30e54e2b18e)
+
+
 ## Dataset
-The Kaggle dataset provides us with the IAM (IAM Handwriting Database) is a widely used and publicly available dataset that has significantly contributed to the development and evaluation of handwritten text recognition systems. The IAM Database consists of a large collection of forms, letters, and documents written by different individuals. It includes over 1,000 pages of handwritten text, containing approximately 115,000 isolated and labelled words.
+The **Kaggle dataset** provides us with the **IAM (IAM Handwriting Database)** is a widely used and publicly available dataset that has significantly contributed to the development and evaluation of handwritten text recognition systems. The IAM Database consists of a large collection of forms, letters, and documents written by different individuals. It includes over 1,000 pages of handwritten text, containing approximately 115,000 isolated and labelled words.
+
+![image](https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/3d0c8bc1-cfbd-4bc7-9297-d1f19251d17c)
+
 
 The words have been extracted from pages of scanned text using an automatic segmentation scheme. All form, line and word images are provided as PNG files and the corresponding form label files, including segmentation information and variety of estimated parameters from the preprocessing steps described in are included in the image files.
 In this project we leveraged the IAM word dataset to train, validate, and test our handwritten text recognition model. By utilizing this dataset, we tackled the challenges associated with handwritten text, such as variability in handwriting styles, different character shapes, and varying line slant or skew.
 
 ## Libraries and Modules used
+<img src = "https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/a7a3caeb-5be6-4e65-8fff-03b4d7b063d4" width = "100">
+
+<img src = "https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/85029350-5ca6-48a8-bb56-b03f0a6053ac" width = "100">
+
+<img src = "https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/e7135482-0a75-4a18-98d7-d13582fa3411" width = "100">
+
+<img src = "https://github.com/legion911/Handwritten_Character_Recognition/assets/118493225/56585ecb-f521-499f-995a-69c9e000131a" width = "100">
+
+
 * The **‘NumPy’** library is imported as ‘np’ and is widely used for numerical computations and array operations.
 * The **‘cv2’** module provides computer vision functionalities, including image processing and manipulation.
 * The **‘os’** module is used for interacting with the operating system, such as managing directories and files.
@@ -51,4 +69,6 @@ These imports bring in specific layer types from Keras.
   3. **‘MaxPool2D’** is a 2D max-pooling layer that performs down-sampling to reduce the spatial dimensions of the input data.
   4. **‘Flatten’** is a layer that flattens the input into a 1D array, typically used to transition from convolutional layers to fully connected layers.
 
-  
+## Conclusion
+
+The model is able to predict the characters accurately to a great extent but it suffers in few cases such as “awfully” is predicted as “anfully”, “stories” is predicted as “staries”. These issues can be resolved by employing a language model as a post processing step along with the decoder which can generate meaningful words and rectify simple mistakes.
