@@ -70,7 +70,7 @@ These imports bring in specific layer types from Keras.
   2. **Conv2D’** is a 2D convolutional layer that performs convolutional operations on images or 2D data.
   3. **‘MaxPool2D’** is a 2D max-pooling layer that performs down-sampling to reduce the spatial dimensions of the input data.
   4. **‘Flatten’** is a layer that flattens the input into a 1D array, typically used to transition from convolutional layers to fully connected layers.
-
+ 
 ## Conclusion
 
 The model is able to predict the characters accurately to a great extent but it suffers in few cases such as “awfully” is predicted as “anfully”, “stories” is predicted as “staries”. These issues can be resolved by employing a language model as a post processing step along with the decoder which can generate meaningful words and rectify simple mistakes.
